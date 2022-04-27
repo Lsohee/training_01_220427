@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./scss/style.css">
+  <!-- <link rel="stylesheet" href="./scss/style.css"> -->
 </head>
 <body>
   <div id="container">
@@ -27,9 +27,26 @@
     
   </div>
   <script>
-    let circle = document.querySelector("#container > div:nth-child(2)");
+    const circle = document.querySelector("#container > div:nth-child(2)");
 // #container>div:nth-child(2)를 어떻게 불러와야 할까?
 // string으로 주면 됨
+    const container = document.getElementById("container");
+    console.log(container);
+    const root = document.getElementById("root")
+    console.log(root);
+    // const div = document.querySelector(" #root > div " )
+    // 한번에 많은 div을 하나의 변수롤 지정하는 방법은 없나?
+    // 혹은 배열 전체를 선택하는 방법
+    const value = 100;
+    
+    
+    div.style = 50 + "px";
+    div.style.height = 700 + "px";
+    div.style.margin = 30 + "px";
+    div.style.backgroundColor = "#ccc";
+
+    // console.dir(container.children[0])
+
     console.log(circle);
     console.dir(circle);
     circle.style.backgroundColor = "rgba(255,102,102,0.5)"
