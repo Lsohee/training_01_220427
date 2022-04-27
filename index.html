@@ -37,15 +37,28 @@
     // const div = document.querySelector(" #root > div " )
     // 한번에 많은 div을 하나의 변수롤 지정하는 방법은 없나?
     // 혹은 배열 전체를 선택하는 방법
-    const value = 100;
-    
-    
-    div.style = 50 + "px";
-    div.style.height = 700 + "px";
-    div.style.margin = 30 + "px";
-    div.style.backgroundColor = "#ccc";
+    // for 문을 활용해 보기로함
 
-    // console.dir(container.children[0])
+    // 설계 
+    // 1. for 문으로 배열값을 반복해서 출력
+    // 2. 한번만 반복하게 지정
+    // 3. 출력되는 결과를 변수 지정 
+    // 4. 지정한 변수에 효과 넣기
+
+    for (let index=1; index<11; index++){
+      // console.log(index);
+      // const result = index;
+      console.log(root[index]); // 정의 되지 않았다고 뜸 -> 이방법이 아닌가보다
+      // 
+    }
+
+    
+
+    // div.style = 50 + "px";
+    // div.style.height = 700 + "px";
+    // div.style.margin = 30 + "px";
+    // div.style.backgroundColor = "#ccc";
+    // // console.dir(container.children[0])
 
     console.log(circle);
     console.dir(circle);
